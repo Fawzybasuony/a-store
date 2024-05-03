@@ -9,25 +9,78 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  <title>M-co</title>
+  <title>E-commerce</title>
 </head>
 
 <body id="body">
   <section>
-    <div class="topnav row mx-0 d-flex justify-content-start align-items-center">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <h4 class="navbar-brand">
+          <i class="text-danger fs-3 mt-2 fa-brands fa-shopify"></i>
+        </h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+        </button>
 
-      <a id="home" class="mx-0 my-3 col-3" href="">Home</a>
-      <a href="#aa" class=" mx-0 my-3 col-3">About</a>
-      <a href="#aa" class=" mx-0 my-3 col-3">contact</a>
-   
-      <a href="#c" class=" mx-0 col-3" id="open">
-        <p id="prpr">0</p>
-        <i id="ru" class="fa-solid fa-cart-shopping"></i>
-       </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                Home
+              </a>
+            </li>
 
-    </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">
+                Contact
+              </a>
+            </li>
 
-<!-- up & dark mod -->
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="open">
+                Cart
+
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row">
+
+
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link position-relative " href="#">
+                <p id="prpr">0</p>
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+
+
+
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- up & dark mod -->
     <div id="dark" class="mod"><i class="fs-3 fa-solid fa-moon"></i></div>
     <button onclick="scrollWin()" type="button"><i class="up fa-solid fa-angle-up"></i></button>
   </section>
@@ -35,11 +88,10 @@
 
   <!------ <header>--------->
   <header class="row mx-0">
-    <img src="imgs/logoo.jpg" class="header_logo my-5 col-12 " />
-
-    <p class="text-h fs-5 col-6 col-sm-5 ms-3 text-light fw-bold">
+    <img src="imgs/logoo.jpg" class="mb-5 col-12 " />
+    <p class="text-h">
       T-Shirt is a global fashion
-      company Spanish fashion company 
+      company Spanish fashion company
       headquartered in Galicia
     </p>
   </header>
@@ -47,158 +99,189 @@
 
 
   <!-----card------->
-  <div id="c" class="all_card row mx-0">
-    <div class="card m-5 col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bo_2.jpeg" class="Avatar" style="width:100%; height:250px;" />
-      <div class="container">
-        <b class="ddd fs-6">T_Gray</b>
-        <p class="fs-6 fw-bold text-dark">$35</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+
+  <div class="container">
+    <div id="c" class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card ">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130064/2/1648023235ba32327d7aecda5b9de9913efa316d9e_thumbnail_900x_rifjuw.webp "
+            class="Avatar" style="width:100%; height:auto" />
+
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container">
+            <b class="fs-6">T_Basic</b>
+            <p class="price fs-6 fw-bold text-danger">$35</p>
+            <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130064/2/164802324294a9e00cd18e3bdacdb07faadc6ea08e_thumbnail_900x_beivyx.webp"
+            class="Avatar" style="width: 100%; height:auto;" />
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container ">
+            <b class=" fs-6">Polo T-shirt</b>
+            <p class="fs-6 fw-bold text-danger">$30</p>
+            <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130063/2/1658329192737168ff6ad063452563108e1de4d132_thumbnail_900x_q7q07n.webp"
+            class="Avatar" style="width: 100%; height:auto;" />
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container">
+            <b class=" fs-6">T_Black</b>
+            <p class="fs-6 fw-bold text-danger">$50</p>
+            <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130060/2/16480232420809ac54cac58a758d88fbee070f7f7a_thumbnail_900x_ehorvj.webp"
+            class="Avatar" style="width: 100%; height:auto;" />
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container ">
+            <b class=" fs-6">Basic T-shirt</b>
+            <p class="fs-6 fw-bold text-danger">$23</p>
+            <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130062/2/1646271078e49bf65969984162cd89e52f225c1251_thumbnail_900x_e05dhe.webp"
+            class="Avatar" style="width: 100%; height:auto;" />
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container ">
+            <b class=" fs-6">Over size</b>
+            <p class="fs-6 fw-bold text-danger">$14</p>
+            <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130060/2/16480232420809ac54cac58a758d88fbee070f7f7a_thumbnail_900x_ehorvj.webp"
+            class="Avatar" style="width: 100%; height:auto;" />
+          <p class="text-secondary ms-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="container">
+            <b class="fs-6">Polo T-shirt</b>
+            <p class="fs-6 fw-bold text-danger">$40</p>
+            <button class="btn1"><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="card m-5 col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bol_3.png" class="Avatar" style="width: 100%; height:250px;" />
-      <div class="container ">
-        <b class="ddd fs-6">T_Black</b>
-        <p class="fs-6 fw-bold text-dark">$30</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
-      </div>
-    </div>
-
-    <div class="card m-5  col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bol_4.png" class="Avatar" style="width: 100%; height:250px;" />
-      <div class="container">
-        <b class="ddd fs-6">T_blue</b>
-        <p class="fs-6 fw-bold text-dark">$50</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
-      </div>
-    </div>
-
   </div>
-
-
-
-  <!-----card------->
-  <div class="all_card row mx-0">
-    <div class="card m-5  col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bol_5.jpeg" class="Avatar" style="width: 100%; height:250px;" />
-      <div class="container ">
-        <b class="ddd fs-6">Black</b>
-        <p class="fs-6 fw-bold text-dark">$23</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
-      </div>
-    </div>
-    <div class="card m-5  col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bol_6.jpeg" class="Avatar" style="width: 100%; height:250px;" />
-      <div class="container ">
-        <b class="ddd fs-6">Black</b>
-        <p class="fs-6 fw-bold text-dark">$14</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
-      </div>
-    </div>
-    <div class="card m-5  col-12 col-sm-6" style="width: 300px;height: 340px;">
-      <img src="imgs/bo_7.jpeg" class="Avatar" style="width: 100%; height:250px;" />
-      <div class="container ">
-        <b class="ddd fs-6">T_Black</b>
-        <p class="fs-6 fw-bold text-dark">$40</p>
-        <button class="btn1 "><i class="fa-solid fa-cart-shopping"></i></button>
-      </div>
-    </div>
-  </div>
-
-
 
   <!--prodact---->
   <div id="prodact">
     <div class="too_brodact" id="te">
       <div class="clos" id="cloos">&#215;</div>
-
-
     </div>
-
     <div class="ff">
-      <b> total :</b>
-      <b id="mony">$ 0</b>
+      <div class="mt-3">
+        <b> Total :</b>
+        <b class="text-danger" id="mony">$ 0</b>
+      </div>
     </div>
   </div>
 
-
-
-
-
   <!-- slidar -->
-  <section>
-    <!-- <center style="margin-top: 150px;"> -->
-    <div id="carouselExampleInterval" class="carousel slide my-5 mx-3" data-bs-ride="carousel">
-
-      <div class="carousel-inner" style="width: 100%;height: 300px; ">
-
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="imgs/bolo_1.webp" class="d-block" style="height: 100%; width: 100%;">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="imgs/bo_2.jpeg" class="d-block" style="height: 300px; width: 100%;">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="imgs/bol_16.jpeg" class="d-block" style="height: 300px; width: 100%;">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="imgs/bol_17.jpeg" class="d-block" style="height: 300px; width: 100%;">
-        </div>
-
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="imgs/bol_18.jpeg" class="d-block" style="height: 300px; width: 100%;">
-        </div>
-
-
-      </div>
-
-
-      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- </center> -->
-  </section>
-
-
-
-  <!---About----->
-  <section style="margin-top: 150px;">
-    <h2 id="aa" class="fw-bold text-dark ms-3">history</h2>
-    <hr />
-    <div class="About row mx-0">
-      <img src="imgs/lyy.jpg" class="logo_About" />
-
-      <p class="w-75 ms-1 fs-5 fw-bold text-body-tertiary">
-        <span class="text_abuot">Sahinlar Clothing and Textile Industry Company</span>
-        is considered one of the largest leading companies in the field of
-        clothing fabric and weaving industry After the company began manufacturing clothing under its companys name
-        its own trademark
-      </p>
-
-
-    </div>
-  </section>
+  <hr>
+  <h2 class="ms-3">Some of our products</h2>
+  <swiper-container class="mySwiper" pagination="true">
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130057/3/Paper_Plane_of_Liberty_Print_Crew_Neck_Short_Sleeve_T-Shirts_-_Khaki___XL_hn4vhm.png"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130056/4/163826656927114e9da27ea115f55404141ba11264_thumbnail_900x_bwlxif.webp"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130056/1/Mens_NASA_Space_Bear_Print_O-Neck_Casual_Loose_Short_Sleeve_T-Shirt_iez2zp.jpg"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130055/1/Mens_NASA_Space_Bear_Print_O-Neck_Casual_Loose_Short_Sleeve_T-Shirt_1_zwadfh.jpg"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130054/3/Paper_Plane_of_Liberty_Print_Crew_Neck_Short_Sleeve_T-Shirts_-_Grey___XL_jdwues.png"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130054/3/Paper_Plane_of_Liberty_Print_Crew_Neck_Short_Sleeve_T-Shirts_-_White___XL_rozf6m.png"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130053/3/Paper_Plane_of_Liberty_Print_Crew_Neck_Short_Sleeve_T-Shirts_-_Black___XL_klpkjo.png"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130061/4/1646822799c97e5f9754d3b3314b4e6ffd848ad22d_thumbnail_900x_r9tfpc.webp"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+    <swiper-slide><img
+        src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130057/4/164430580182db3b5a5192e660a87c832a397044b6_thumbnail_900x_o3r9wu.webp"
+        style="width: 500px ;height: 500px;" alt=""></swiper-slide>
+  </swiper-container>
   <hr>
 
+  <!-- Why us? -->
+  <section id="about">
+    <div style="margin-top: 50px; text-align: center;">
+      <h2>Why us ?</h2>
+      <h2>The company was established in 2013 and we were alone</h2>
+    </div>
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row mx-0">
+        <img
+          src="https://res.cloudinary.com/drlhjaofi/image/upload/v1713130057/4/164430580182db3b5a5192e660a87c832a397044b6_thumbnail_900x_o3r9wu.webp"
+          class="img_way-are col-sm-6">
+        <div class="col-sm-6">
+          <p dir="rtl" class="text-Abute text-dark fw-bold opacity-50">بدأنا بتصوير المنتجات للشركات الصغيرة و شيئاً
+            فشيئاً
+            أصبحنا شركة رقمية متكاملة لنقدم لكم خدمات ذات جودة عالية في مجالات
+            التصوير الاحترافي و التسويق الإلكتروني و تصميم مواقع الويب، اسمحوا لنا بأن نعرف عن أنفسنا.
+          </p>
+
+          <p dir="rtl" class="text-Abute text-dark fw-bold opacity-50">
+            <span class="fw-bold text-danger">إن سياستنا في العمل تضمن لنا التطوير المستمر</span>
+            لذا معنى أن نعمل معك هو التطوّر المستدام
+            نشأت مؤسسة Creative PEM إبداع التصوير والتسويق بناءً على طلب سوق العمل المتزايد لخدمات
+            التصوير الاحترافي الذي
+            يرتبط به تصميم مواقع الويب والتسويق الالكتروني، حيث أصبحت هذه العملية مفتاح جذب كلٍّ من
+            العملاء المهتمين و العملاء
+            المحتملين على حدّ سواء
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+  </section>
+  <!--  -->
 
 
   <!-- google -->
   <section>
-    <iframe class="row mx-0 ms-auto me-auto"
+    <iframe class="row col-12 mx-2 "
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54655.770624282566!2d30.981384026087454!3d31.11013048546453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7ab78f233021f%3A0xc2cdebb004a208f8!2z2YPZgdixINin2YTYtNmK2K7YjCDZgtiz2YUg2YPZgdixINin2YTYtNmK2K7YjCDZg9mB2LEg2KfZhNi02YrYrtiMINmF2K3Yp9mB2LjYqSDYp9mE2LrYsdio2YrYqQ!5e0!3m2!1sar!2seg!4v1705341639486!5m2!1sar!2seg"
       width="100%" height="300" style="border:0; margin:70px; padding: 20px;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -207,51 +290,62 @@
 
 
   <!-- --footer---   -->
-  <footer>
-    <div class="fotar row mx-0">
-      <ol class="ol col-6">
-        <i class="fa-solid fa-user"> <span> T__S H I R T</span></i>
-        <i class="fa-brands fa-facebook"><span> facebook</span></i>
-        <i class="fa-brands fa-instagram"><span> instagram</span></i>
-        <i class="fa-solid fa-phone"><span> 01060618915 </span></i>
-      </ol>
+
+  <footer id="footer" class="mx-0 d-flex justify-content-around align-items-center bg-dark">
+
+    <div class="my-5 ms-2 text-light">
+      <h2> Connect with us</h2>
+      <div><i class="fa-solid fa-location-dot"></i>New Cairo,next to Al Zahraa Hospital</div>
+      <div><i class="fa-solid fa-phone"></i> 01060618915</div>
+      <div><i class="fa-solid fa-envelope"></i>cairopower.cpc@gmail.com</div>
+      <div>
+        <i class="p-2 fa-brands fa-facebook"></i> <i class="p-2 fa-solid fa-location-dot"></i>
+        <i class="p-2 fa-brands fa-linkedin"></i> <i class="p-2 fa-brands fa-twitter"></i>
+      </div>
+    </div>
+
+    <div class="text-light me-2">
+      <div>times of work</div>
+      <div>Sunday Thursday</div>
+
+      <div>9:00 AM-5:00 PM</div>
+      <div>Friday Saturday closed</div>
 
 
-      <p class="pl mt-5 col-6">
-        <span class="text-secondary fw-bold fs-5">Working hours are from the hour?</span>
-
-        <br>
-        9:am
-        to
-        6:pm
-        <br>
-        Closed on Friday
-      </p>
     </div>
   </footer>
 
-
-
-
+  <!-- Detlse -->
   <div class="allprodact">
+    <!-- <div class="allprodact row mx-0"> -->
+    <!-- 
+      <div class="prodact_2 col-12 col-sm-6" style="margin-top: 150px;">
+           <img src="/imgs//logoo.jpg" class="img_2">
+         </div>
+         <div class="ms-3 mb-5 col-12 col-sm-5" style="margin-top: 150px;">
+          <p class="text-secondary w-75 fs-4">sit amet consectetur adipisicing elitecto doloremque harum dolorum non adipisci quasi</p>
+           <h5 class="card-title fs-2 my-4 fw-bold">t-black</h5>
+           <p class="w-50 fs-4 fw-bold text-danger">Price : $ 44</p>
 
+         </div> -->
+    <!-- </div> -->
   </div>
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
   <script src="main.js"></script>
   <script src="jquery-3.6.0.min.js"></script>
   <script>
-     $(".mod").click(function () {
-        $(".mod i").toggleClass("fa-sun fa-moon")
-        $("#body").toggleClass("dark")
+    $(".mod").click(function () {
+      $(".mod i").toggleClass("fa-sun fa-moon")
+      $("#body").toggleClass("dark")
 
 
-      })
+    })
   </script>
 
 </body>
