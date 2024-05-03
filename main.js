@@ -40,8 +40,9 @@ function xx() {
     let total = 0;
     marct.forEach((itme) => {
         let ppe = Number(
-            itme.getElementsByTagName("pre")[0].innerText.replace("$", "")
+            itme.getElementsByTagName("p")[0].innerText.replace("$", "")
         );
+        console.log();
         let ppp = Number(itme.getElementsByClassName("valuo")[0].value);
         total = total + ppp * ppe;
     });
@@ -77,19 +78,21 @@ function xx() {
 
             let num = eo.parentElement.parentElement.getElementsByTagName("b")[0].innerText;
 
-            let pres = eo.parentElement.parentElement.getElementsByTagName("p")[0].innerText;
-
+            let price = eo.parentElement.parentElement.getElementsByTagName("p")[1].innerText;
 
             let add = `
+      <div class="nn">
       <div class="marct">
-        <img src="${phot}" style="width: 100px;height: 100px;  margin-left: 10px;">
+        <img src="${phot}" class="ms-2" style="width: 100px;height: 100px;">
         <div class="vv">
-        <p class="ttt fw-bold">${num}</p>
-        <pre class="fs-5 mx-5 fw-bold">${pres}</pre>
+        <b class="fw-bold">${num}</b>
+        <p class="fs-5 mx-2 fw-bold">${price}</p>
         <input type="number" value="1" min="1" class="valuo">
 
         <button type="button" class="pere" id="remove"><i class="fa-solid fa-trash"></i></button>
 </div>
+</div>
+
   `;
             too_brodact.innerHTML += add;
             xx();
@@ -158,25 +161,26 @@ function xx() {
 
             let photo = eo.parentElement.getElementsByClassName("Avatar")[0].src
             let titl = eo.parentElement.getElementsByTagName("b")[0].innerText;
-            let pp = eo.parentElement.getElementsByTagName("p")[0].innerText;
-
+            let title = eo.parentElement.getElementsByTagName("p")[0].innerText;
+            let pp = eo.parentElement.getElementsByTagName("p")[1].innerText;
             let xx = `
-  <div class="allprodact row mx-0 mt-5">
+            <div class="allprodact row mx-0">
 
-   <div class="prodact_2 col col-sm-6" style="margin-top: 100px;">
-        <img src="${photo}" class="img_2">
-      </div>
-      <div class="titl col col-sm-6" style="margin-top: 100px;">
-        <h5 class="card-title fs-3 my-4 fw-bold">${titl}</h5>
-        <p class="w-50 fw-bold text-dark">${pp}</p>
-        <p class="fs-5 fw-bold text-dark ">XL XXL XXXL </p>
-        <a class="aaa" href="index.html"> << Back </a>
-      </div>
-  </div>
+            <div class="prodact_2 col-12 col-sm-6" style="margin-top: 150px;">
+                 <img src="${photo}" class="img_2">
+               </div>
+               <div class="ms-3 mb-5 col-12 col-sm-5" style="margin-top: 150px;">
+                <p class="text-secondary w-75 fs-4">${title}</p>
+                 <h5 class="card-title fs-2 my-4 fw-bold">${titl}</h5>
+                 <p class="w-50 fs-4 fw-bold text-danger">Price : ${pp}</p>
+                 <a class="aaa" href="index.html"> << Back </a>
+
+               </div>
+           </div>
 
 `
             allprodact.innerHTML = xx
-            allprodact.style.display="block"
+            allprodact.style.display = "block"
 
         })
     });
