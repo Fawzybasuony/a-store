@@ -1,13 +1,47 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
 }
 
-body {
-  height: 3000px;
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: hsl(0, 0%, 100%);
 }
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(15px);
+  background-color: rgba(157, 155, 155, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+.nav-item .nav-link {
+  color: white
+}
+
+/*   -------------   */
+
+
 
 .mod {
   text-align: center;
@@ -29,9 +63,11 @@ body {
   background-color: #000;
   color: white;
 }
+
 .dark .About p {
   color: rgb(151, 149, 149) !important;
 }
+
 .dark header {
   background-color: #000;
   color: white;
@@ -65,9 +101,16 @@ h6 {
   background-color: #000;
   color: white;
 }
+
 .dark .up {
   color: white;
 }
+
+.dark .text-Abute {
+  color: white !important;
+}
+
+
 /* ================== */
 .topnav {
   width: 100%;
@@ -87,6 +130,7 @@ h6 {
   font-weight: 600;
   font-size: 17px;
 }
+
 h3 {
   position: absolute;
   left: 260px;
@@ -113,46 +157,106 @@ li {
 
 #prpr {
   color: rgb(228, 0, 0);
-  position: relative;
-  top: 27px;
   font-weight: bold;
-  opacity: 0;
   transition: all 0.5s;
+  margin: 0 !important;
+  position: absolute;
+  bottom: 22px;
+  right: 3px;
 }
+
+@media (min-width: 500px) and (min-width: 900px) {
+  #prpr {
+    position: absolute;
+    bottom: 22px;
+    right: 10px;
+  }
+}
+
 #ru {
   margin-bottom: 40px;
 }
-a:hover{
+
+a:hover {
   color: rgb(29, 250, 0);
   transition: all .5s;
 }
+
 /* ============      ==================== */
 
 header {
+  position: relative;
   width: 100%;
   height: auto;
 }
 
 .text-h {
+  width: 300px !important;
   position: absolute;
-  top: 230px;
+  top: 200px;
   left: 20px;
+  color: rgb(221, 220, 220);
+  font-size: 23px;
+  font-weight: 400;
+  font-family: cursive;
 }
 
+/* (min-width: 500px) and */
+@media (min-width: 700px) {
+  .text-h {
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    width: 400px !important;
+
+  }
+}
+
+/* ---- */
+
+
+.mySwiper {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- */
+.img_way-are {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+
+}
+
+/* ----- */
+
 #remove {
-  background-color: #092f75;
+  background-color: rgba(211, 0, 0, 0.551);
   border: none;
   width: 40px;
   height: 30px;
-  margin-right: 10px;
   border-radius: 10px;
   color: #f2f2f2;
 }
 
-#remove:hover {
-  background-color: rgb(214, 3, 3);
-  transition: all 0.5s;
-}
+
 .fa-trash {
   font-size: 20px;
 }
@@ -167,6 +271,7 @@ p {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  margin: 20px 0px;
 }
 
 .card:hover {
@@ -179,14 +284,16 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
 .btn1 {
   background-color: #04aa6d;
   border: none;
   border-radius: 10px;
   width: 60px;
 }
+
 .btn1:hover {
-  background-color: blue;
+  background-color: #72bba0;
   transition: all 0.5s;
 }
 
@@ -196,7 +303,6 @@ p {
 
 .up {
   font-size: 25px;
-
   color: black;
   position: fixed;
   border: none;
@@ -212,10 +318,7 @@ p {
   font-weight: 600;
   border: none;
 }
-.ttt {
-  color: black;
-  margin-left: 5px;
-}
+
 
 /* -------------------------------- */
 
@@ -228,47 +331,57 @@ p {
   background-color: white;
   display: none;
   transition: all 0.5s;
-  overflow: scroll;
+  z-index: 111;
+  overflow: auto;
 }
 
 #cloos {
   font-size: 50px;
   position: absolute;
   right: 31px;
-  top: 70px;
+  top: 100px;
   z-index: 99;
 }
+
 #cloos:hover {
   color: red;
   transform: scale(1.2);
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   transition: all 0.5s;
 }
 
 .ff {
-  background-color: white;
+  border: solid 2px orange;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 200px;
   height: 70px;
+
+}
+
+.too_brodact {
+  margin-top: 200px;
+  overflow: auto;
+  z-index: 111;
 }
 
 .marct {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  position: relative;
-  top: 100px;
+
+  margin: 20px 0px;
+  border: solid 1px darkgray;
+  box-shadow: 2px 1px 4px 0px dodgerblue;
 }
 
 .vv {
   display: flex;
+  justify-content: space-evenly;
   margin-top: 25px;
 }
+
 /* ---------------- */
 
 /* About */
@@ -277,14 +390,13 @@ p {
   opacity: 0.6;
   font-size: 20px;
 }
+
 h2 {
   margin-top: 150px;
   font-size: x-large;
 }
 
-b {
-  font-size: x-large;
-}
+
 
 .About {
   margin-top: 100px;
@@ -302,6 +414,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
 .fotar {
   margin-top: 200px;
   width: 100%;
@@ -309,9 +422,11 @@ footer {
   background-color: black;
   color: #858282;
 }
+
 .ol {
   width: 200px;
 }
+
 .ol i {
   display: block;
   font-size: 20px;
@@ -322,10 +437,12 @@ footer {
 i:hover {
   color: #089163;
 }
+
 .pl {
   width: 300px;
   color: gray;
 }
+
 /* 
 -----------
 */
@@ -336,22 +453,24 @@ i:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  overflow: auto;
   display: none;
-  z-index: 9;
+  overflow: auto;
+  z-index: 111;
 }
 
 .img_2 {
-  width: 200px;
+  width: 400px;
   height: auto;
 }
-.titl {
-  width: 300px;
-}
+
+
 .aaa {
   font-size: 20px;
   font-family: 500;
   text-decoration: none;
 }
+
 .aaa:hover {
   color: red !important;
   background: none;
